@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  img {
+    width: 3cm;
+    height: 3cm;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #d7d7e0;
+    color: #333;
+  }
+  
+  .container {
+
+    width: 100%; /* Asegura que el contenedor no exceda el 90% del ancho de la pantalla */
+    padding: 20px;
+    background: #e1e0f0;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden; /* Evita que el contenido se desborde si hay mucho contenido */
+}
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #170a3b;
+  }
+  
+  p {
+    text-align: center;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  .btn-primary {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #6c5bb6;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    font-size: 16px;
+  }
+  
+  .btn-primary:hover {
+    background-color: #4e45a0;
+  }
+  
+  .info-per{
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: #d6d4f8;
+    border: 0.5px solid #6406cf;
+    border-radius: 8px;
+    padding: 10px;
+  }
+  
+  .info-per p {
+    margin: 3px 0;
+    font-size: 16px;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+  }
+  
+  table, th, td {
+    border: 1px solid #4e0081;
+  }
+  
+  th, td {
+    padding: 10px;
+    text-align: center;
+  }
+  
+  th {
+    background-color: #d6d4f8;
+    color: white;
+    cursor: pointer;
+  }
+  
+  th:hover {
+    background-color: #7f45a0;
+  }
+  
+  td img {
+    width: 50px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  ol {
+    margin: 10px 0;
+    padding-left: 20px;
+  }
+  
+  li {
+    color: rgb(32, 24, 48);
+  }
+  
+  /* Estilos para mostrar/ocultar productos según el checkbox */
+  input#c1:checked ~ table tbody tr.c1 { display: table-row; }
+  input#c1:not(checked) ~ table tbody tr.c1 { display: none; }
+  input#c2:checked ~ table tbody tr.c2 { display: table-row; }
+  input#c2:not(checked) ~ table tbody tr.c2 { display: none; }
+  input#c3:checked ~ table tbody tr.c3 { display: table-row; }
+  input#c3:not(checked) ~ table tbody tr.c3 { display: none; }
+  input#c4:checked ~ table tbody tr.c4 { display: table-row; }
+  input#c4:not(checked) ~ table tbody tr.c4 { display: none; }
+  
+  
+  #agregarProducto {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #d6d4f8;
+  }
+  
+  #agregarProducto input {
+    padding: 8px;
+    width: calc(20% - 12px);
+  }
+  
+  #agregarProducto button {
+    margin: 10px;
+    padding: 8px 16px;
+    background-color: #564caf;
+    color: white;
+    border: none;
+    cursor: pointer;
+    
+  }
+  
+  #agregarProducto button:hover {
+    background-color: #7745a0;
+  }
+
+  #agregarProducto h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 35px;
+  }
+
+  
